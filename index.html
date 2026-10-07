@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>マンガ置き場</title>
+  <meta name="description" content="マンガ作品を並べた個人サイト">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="stars.css">
+<link rel="stylesheet" href="design.css">
+</head>
+<body>
+  <div id="star-field" class="star-field" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <div>
+      <p class="eyebrow">MANGA ARCHIVE</p>
+      <h1 class="site-title">マンガ置き場</h1>
+    </div>
+  </header>
+
+  <section class="archive-controls" aria-label="作品一覧の操作">
+    <div class="sort-controls">
+      <button type="button" class="control-btn active" data-sort="new">NEWEST</button>
+      <button type="button" class="control-btn" data-sort="old">OLDEST</button>
+    </div>
+    <button type="button" id="random-work" class="control-btn random-btn">RANDOM</button>
+  </section>
+
+  <main id="manga-grid" class="manga-grid" aria-label="マンガ一覧"></main>
+
+  <footer class="footer">
+    <div class="footer-left">
+      <span>MANGA OKIBA</span>
+      <span class="footer-since">since 2026</span>
+    </div>
+    <a class="account" href="https://x.com/yuemichitaka" target="_blank" rel="noopener noreferrer">@yuemichitaka</a>
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+  <script src="stars.js"></script>
+</body>
+</html>

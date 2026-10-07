@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>マンガ | マンガ置き場</title>
+  <link rel="stylesheet" href="reader.css">
+  <link rel="stylesheet" href="stars.css">
+<link rel="stylesheet" href="design.css">
+</head>
+<body>
+  <div id="star-field" class="star-field" aria-hidden="true"></div>
+
+  <header class="reader-header">
+    <div class="reader-nav">
+      <a class="back" href="index.html">← マンガ置き場に戻る</a>
+      <a id="reader-series-link" class="series-back" href="#" hidden></a>
+    </div>
+    <h1 id="reader-title"></h1>
+    <div class="reader-meta">
+      <time id="reader-date"></time>
+      <span id="reader-page-count">… PAGES</span>
+    </div>
+  </header>
+
+  <main id="comic" class="comic" aria-live="polite"></main>
+
+
+  <footer class="reader-footer">
+    <div class="reader-nav reader-nav-bottom">
+      <a class="back" href="index.html">← マンガ置き場に戻る</a>
+      <a id="share-x" class="share-x" target="_blank" rel="noopener noreferrer" hidden>Xで共有</a>
+      <a id="reader-series-link-bottom" class="series-back" href="#" hidden></a>
+    </div>
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="reader.js"></script>
+  <script src="stars.js"></script>
+</body>
+</html>
